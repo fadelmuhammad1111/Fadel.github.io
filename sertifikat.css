@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
 
-* {
+*, html, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Ubuntu;
+    font-family: sans-serif;
 }
 body{
     background-image: url(img/giphy3.gif);
@@ -26,8 +26,6 @@ body{
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
-
-
 .navbar .logo {
     font-size: 24px;
     color: white;
@@ -72,7 +70,7 @@ body{
     margin-left: 20px;
     display: block;
     padding :15px 20px;
-    font-family:sans-serif ;
+    font-family:light ;
 }
 .hamburger-menu {
     width: 30px;
@@ -87,6 +85,11 @@ body{
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+    opacity: 0.7;
+}
+
+.hamburger-menu:hover {
+    opacity: 1.2;
 }
 
 .hamburger-menu span {
@@ -145,3 +148,47 @@ body{
     width: 80px;
     
 }
+
+.top-wrapper {
+    padding: 180px 0 0px 0;
+    background-image: url(img/giphy3.gif);
+    background-size: cover;
+    height: 94vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    opacity: 1;
+  }
+  
+  .top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  footer {
+    background-color: rgba(12, 15, 15, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+  }
+
+  img {
+    width: 700px;
+    border: 10px;
+    border-radius: 20px;
+    margin-top: -20px;
+  }
